@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+    stages {
+        stage ("devlop checking the code") {
+            steps {
+                echo "devlop test"
+            }
+        }
+        
+        stage ("build processing") {
+            steps {
+                echo "build test"
+            }
+        }
+        
+        stage ("unit testing stage") {
+            steps {
+                echo "test cases"
+            }
+        }
+        
+        stage ("deploye services") {
+            steps {
+                echo "deploye stage"
+            }
+        }
+            
+    }
+}
